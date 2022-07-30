@@ -1,0 +1,29 @@
+@mixin subTitle {
+    font-size: $font-xl;
+    color: #650300;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 700;
+  }
+
+  @mixin linkHover {
+    content: "";
+    width: 0%;
+    height: 3px;
+    margin: 5px 0;
+    background-color:white;
+    transition: .5s ;
+  } //參考學姊
+
+  @mixin pad {
+    @media(max-width:768px){
+        @content
+    }
+};
+
+
+@mixin phone {
+    @media (max-width:576px){
+        @content
+    }
+}

@@ -1,0 +1,107 @@
+footer{
+    background-color: #AA0601;
+    padding-top: 48px;
+    .container{
+             .contact-nav{
+                  :not(:last-child){ margin-right: 48px;}
+              }
+              .social{
+                .icon{
+                  &:hover {
+                    filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
+                  }
+                
+                  width: 48px;
+                  height: 48px;  }
+                }
+               
+              .contact-info{
+                padding-bottom: 32px;
+               li{
+             
+                .material-symbols-outlined {
+             
+                   padding-right: 22px;
+          
+                }
+             
+                 a{
+                   font-size: 36px;
+                   }
+               }
+              }
+              
+     }
+     .copyRight{
+    padding: 32px 12px;
+      color: #fff;
+     }
+  }
+  //footer RWD
+  //ipod
+  // @media(max-width:768px)
+  
+  // phone
+  @media(max-width:576px){
+    footer{
+      padding-top: 24px;
+      .container{
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        .contact{
+   
+          .contact-nav{
+              :not(:last-child) {
+              margin-right: 0px;
+          }
+          display: none;
+            // font-size: 4px;
+      // opacity: 0;    
+          }
+          .contact-info{
+            width: 70%;
+        padding-bottom: 0;
+            li{
+              padding-bottom: 8px;
+              .material-icons {
+                font-size: 18px;
+              }
+              a{
+                font-size: 16px;
+              }
+            }
+            
+          }
+      
+          .social{
+            order: 1;
+      
+            li{
+            margin-right: 8px;
+          
+            img{
+              width: 24px;
+              height: 24px;
+            }
+          }
+          }
+        }
+      }
+      .copyRight{
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  
+    .policy{
+      flex-direction: column;
+      p{
+        font-family: "Noto Sans TC";
+      }
+  
+    }
+      }
+     
+      
+    }
+  }  

@@ -1,0 +1,23 @@
+.classic{
+    h2{
+     @include subTitle
+    }
+    ul{
+      display: flex;
+      :not(:last-child){ margin-right: 24px;}
+      padding-bottom: 80px;
+      li{
+        max-width: 33.33%;
+        h3{
+          font-size: 48px;
+          text-align: center;
+          font-family: Roboto;
+          font-style: italic;
+          font-weight: 900;
+          color: $primary;
+        }
+      }
+     
+    }
+  }
+  

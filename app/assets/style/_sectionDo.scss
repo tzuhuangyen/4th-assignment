@@ -1,0 +1,30 @@
+.do{
+    background-color: #fbf2f2;
+    h2{
+      @include subTitle;
+      padding-bottom: 32px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      :not(:last-child){ margin-right: 24px;}
+      text-align: center;
+      li{
+  
+      max-width: 25%;
+      padding-bottom: 80px;
+     
+      img{
+        width: 83px;
+      }
+      h3{
+        font-size: 24px;
+        
+      }
+      p{
+        font-size: 16px;
+  text-align: left;
+      }
+    }
+  }
+  }
