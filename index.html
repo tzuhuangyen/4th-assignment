@@ -1,10 +1,45 @@
----
-title: 4th assignment
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>4th assignment</title>
+    <!-- //google icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container d-flex jcsb a-items-c">
+        <h1 class="py-4">
+          <a href="#"
+            ><img src="./assets/images/logo-white.png" alt="logo"
+          /></a>
+        </h1>
+        <ul class="nav d-flex flex-wrap text-white">
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+      </div>
+    </header>
+
+    
 
 <div class="banner">
     <div class="title">
@@ -152,3 +187,69 @@ current: index
      
     </section>
   </main>
+
+    <footer>
+      <div class="container pt-12 d-flex flex-wrap">
+        <div class="contact d-flex borderB-white flex-wrap jcsb">
+          <ul class="contact-nav d-flex">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class="social d-flex">
+            <li class="mr-32">
+              <a href=""
+                ><img
+                  src="./assets/images/ic-social-fb.png"
+                  alt="fb"
+                  class="icon"
+              /></a>
+            </li>
+            <li class="mr-32">
+              <a href=""
+                ><img
+                  src="./assets/images/ic_social_ig.png"
+                  alt="ig"
+                  class="icon"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./assets/images/ic_social_line.png"
+                  alt="line"
+                  class="icon"
+              /></a>
+            </li>
+          </ul>
+          <ul class="contact-info">
+            <li>
+              <span class="material-icons material-symbols-outlined md-36">
+                call</span
+              >
+              <a href="tel:+0800-000-00">0800-000-000</a>
+            </li>
+
+            <li>
+              <span class="material-icons material-symbols-outlined md-36"
+                >mail</span
+              >
+              <a href="mailtoglasses@business.co">glasses@business.co</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyRight container d-flex jcsb">
+        <p class="pb-2">Copyright &copy; 2020 Glasses.All rights reserved.</p>
+        <div class="policy d-flex">
+          <p class="pb-2">隱私權政策</p>
+          <p>服務條款</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
