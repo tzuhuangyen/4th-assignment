@@ -1,8 +1,9 @@
 @mixin subTitle {
-    font-size: $font-xl;
-    color: #650300;
+    font-size: $h2-text;
+    color: $secondary;
     text-align: center;
     padding-top: 80px;
+    padding-bottom: 48px;
     font-weight: 700;
   }
 

@@ -1,10 +1,20 @@
 header{
     background-color:$primary;
+   h1{
+    a{
+    background-image: url("../images/logo-white.png");
+    background-size: cover;
+    width: 90px;
+    height: 55px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+   }
   }
-  .container{
-    img{
-      width: 80px;
-    }
+
+  }
+ header .container{
     ul{
        :not(:last-child){ margin-right: 64px;}
         li{
