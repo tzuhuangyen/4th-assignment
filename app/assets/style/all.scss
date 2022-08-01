@@ -4,13 +4,13 @@
 @import "./base/reset";
 @import "./base/base";
 
-@import "variable";
-@import "mixin";
+@import "./helps/variable";
+@import "./helps/mixin";
 
 
 @import "./layout/layoutHeader";
 @import "./pages/index";
-@import "./layout/layoutFooter";
+@import "./layout/layoutFooter.scss";
 
 
 

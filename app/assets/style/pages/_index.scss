@@ -13,7 +13,7 @@
         text-align: right;
         padding: 0 12px;
         span{
-          font-size: $h3-text;
+          font-size: 36px;
         }
        
         h2{
@@ -25,10 +25,10 @@
         button{
           border-width: 0;
        
-            background-color: $primary;
+            background-color:$primary;
             a{
               display: block;
-              font-size: $h5-text;
+              font-size: 20px;
               padding: 6px 12px;
             }
           }
@@ -56,7 +56,7 @@
   }
   
   .do{
-    background-color:$lightBg;
+    background-color:#FBF2F2;
     h2{
       @include subTitle;
       padding-bottom: 32px;
@@ -76,7 +76,7 @@
     }
    
     h3{
-      color: $secondary;
+      color: #650300;
       font-size: $h4-text;
       font-weight: 700;
       
@@ -126,7 +126,7 @@ text-align: left;
         max-width: 50%;
         h3{
          padding: 8px 0;
-         color: #AA0601;
+         color:$primary;
           background-color: #fff;
           font-size: 48px;
           font-weight: 700;
@@ -200,8 +200,8 @@ text-align: left;
         
         }
       .btn{
-          // margin: 0 50px 80px 105px;
-          margin: 0 auto;
+          margin: 0 50px 80px 105px;
+  
           background-color: $primary;
           width: 70%;
           padding-top: 16px;
@@ -214,7 +214,7 @@ text-align: left;
      
        
       }
-    }
+  }
   
     
      

@@ -1,10 +1,27 @@
 footer{
     background-color: #AA0601;
     padding-top: 48px;
-    .container{
-             .contact-nav{
-                  :not(:last-child){ margin-right: 48px;}
-              }
+    .navInfoSocial{
+      display: flex;
+      justify-content: space-between;
+              .nvaIfo{
+                 .contact-nav{
+                  :not(:last-child)
+                    { margin-right: 48px;}
+
+                  }
+                 .contact-info{
+               li{
+                .material-symbols-outlined {
+                   padding-right: 22px;
+                }
+                 a{
+                   font-size: 36px;
+                   }
+               }
+                 }
+               }
+            
               .social{
                 .icon{
                   &:hover {
@@ -13,30 +30,52 @@ footer{
                 
                   width: 48px;
                   height: 48px;  }
-                }
-               
-              .contact-info{
-                padding-bottom: 32px;
-               li{
-             
-                .material-symbols-outlined {
-             
-                   padding-right: 22px;
-          
-                }
-             
-                 a{
-                   font-size: 36px;
-                   }
                }
-              }
+               
+             
               
      }
-     .copyRight{
+    .copyRight{
     padding: 32px 12px;
       color: #fff;
-     }
+    }
   }
+  .navInfoSocial{
+    display: flex;
+    justify-content: space-between;
+            .nvaIfo{
+               .contact-nav{
+                :not(:last-child){ 
+                  padding-right: 48px;
+                }
+
+                }
+               .contact-info{
+             li{
+              .material-symbols-outlined {
+                 padding-right: 22px;
+              }
+               a{
+                 font-size: 36px;
+                 }
+             }
+               }
+             }
+          
+            .social{
+              .icon{
+                &:hover {
+                  filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
+                }
+              
+                width: 48px;
+                height: 48px;  }
+             }
+             
+           
+            
+   }
+
   //footer RWD
   //ipod
   // @media(max-width:768px)
