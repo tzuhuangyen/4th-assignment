@@ -8,12 +8,7 @@
   }
 
   @mixin linkHover {
-    content: "";
-    width: 0%;
-    height: 3px;
-    margin: 5px 0;
-    background-color:white;
-    transition: .5s ;
+    filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
   } //參考學姊
 
   @mixin pad {

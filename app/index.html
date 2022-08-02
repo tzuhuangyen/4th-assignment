@@ -6,10 +6,12 @@ current: index
 ---
 
 <div class="banner">
-  <div class="title">
-    <span>Promise-Desert 2020 早春系列</span>
-    <h2>看得清，才能看得遠</h2>
-    <button class="btn"><a href="#">立即購買</a></button>
+  <div class="container">
+    <div class="title">
+      <span>Promise-Desert 2020 早春系列</span>
+      <h2>看得清，才能看得遠</h2>
+      <button><a href="#">立即購買</a></button>
+    </div>
   </div>
 </div>
 
@@ -138,7 +140,7 @@ current: index
         </div>
         <div class="mb-4">
           <label for="tel">聯絡電話</label>
-          <input type="number" id="phone" placeholder="0912-345-678" />
+          <input type="text" id="phone" placeholder="0912-345-678" />
         </div>
         <div class="mb-4">
           <label for="email">電子郵件</label>
@@ -154,12 +156,10 @@ current: index
             placeholder="請輸入您的意見"
           />
         </div>
-        <div class="pb-12">
+        <div class="checkBoxSet pb-12">
+          <input class="checkbox" type="checkbox" id="check" name="agree" />
           <label for="check">
-            <input class="checkbox" type="checkbox" id="check" name="agree" />
-            <span
-              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-            </span>
+            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
           </label>
         </div>
         <button class="btn"><a href="#">確認送出</a></button>

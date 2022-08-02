@@ -7,36 +7,39 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-      .title{
-        color:$secondary;
-        text-align: right;
-        padding: 0 12px;
-        span{
-          font-size: 36px;
-        }
+    // .container{
+    // text-align: right;
+    // }
+  }
+  .title{
+    color:$secondary;
+   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+    span{
+      font-size: $h3-text;
+    }
+   
+    h2{
+      font-size: 68px;
+      font-weight: bold;
+      color:$secondary;
+ 
+    }
+    button{
+      border-width: 0;
+    a{
+      background-color:$primary;
+      color: #fff;
+        font-size: $h5-text;
+        padding: 6px 12px;
+   
+    }
        
-        h2{
-          font-size: 68px;
-          font-weight: bold;
-          color:$secondary;
-          text-align: center;
-        }
-        button{
-          border-width: 0;
-       
-            background-color:$primary;
-            a{
-              display: block;
-              font-size: 20px;
-              padding: 6px 12px;
-            }
-          }
-     
-        
       }
-  
-  
+ 
+    
   }
   //banner RWD
   @media (max-width:576px){
@@ -170,6 +173,7 @@ text-align: left;
     .container{
       max-width: 636px;
       margin: 0 auto;
+      padding-bottom: 80px;
   
       h2{
         @include subTitle;
@@ -178,30 +182,38 @@ text-align: left;
         font-size: $h5-text;
         padding-bottom: 24px;
       }
-      label{
-          margin-bottom: 8px;
-          display:block;
-          width: 100%;
-        }
-     input{
-          width: 100%;
-          background-color:$lightBg;
-          padding: 6px 12px;
-        }
+  
     }
-    .container{
-      .info{
+    label{
+      margin-bottom: 8px;
+     
+      width: 100%;
+    }
+     input{
+      width: 100%;
+      background-color:$lightBg;
+      padding: 6px 12px;
+      
+    }
+  }
+       .message{
         padding: 6px 12px;
         background-color:$lightBg;     
         height: 136px;
        }
+       .checkBoxSet{
+        display: flex;
+        align-items: flex-start;
+       }
       .checkbox{
         width: 24px;
-        
+        height: 24px;
+        margin-right: 5px;
         }
       .btn{
-          margin: 0 50px 80px 105px;
-  
+          // margin: 0 50px 80px 105px;
+  display: block;
+  margin: 0 auto;
           background-color: $primary;
           width: 70%;
           padding-top: 16px;
@@ -210,14 +222,12 @@ text-align: left;
           a{
             font-size: 24px;
           }
-        }
-     
-       
-      }
-  }
+        } 
   
-    
-     
+    .meg input.checkbox{
+      width: 24px;
+      height: 24px;
+      }     
   
     
 

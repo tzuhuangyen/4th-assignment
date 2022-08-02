@@ -1,81 +1,74 @@
-footer{
-    background-color: #AA0601;
+  footer{
+    background-color: $primary;
     padding-top: 48px;
     .navInfoSocial{
       display: flex;
       justify-content: space-between;
-              .nvaIfo{
-                 .contact-nav{
-                  :not(:last-child)
-                    { margin-right: 48px;}
-
-                  }
-                 .contact-info{
-               li{
-                .material-symbols-outlined {
-                   padding-right: 22px;
-                }
-                 a{
-                   font-size: 36px;
-                   }
-               }
-                 }
-               }
+      border-bottom:1px solid #fff;    
             
-              .social{
-                .icon{
-                  &:hover {
-                    filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
-                  }
-                
-                  width: 48px;
-                  height: 48px;  }
-               }
-               
-             
-              
      }
-    .copyRight{
-    padding: 32px 12px;
-      color: #fff;
+   
+  }
+  .navInfo{
+    
+    .contact-nav{
+     display: flex;
+     justify-content: space-between;
+     li{
+      &:hover {
+      @include linkHover;
+    }}
+     }
+    .contact-info{
+    margin-top: 44px;
+     margin-bottom: 32px;
+    li{
+      &:hover {
+        @include linkHover;
+      }
+    }
+  li{
+   display: flex;
+   align-items: center;
+
+   .material-symbols-outlined {
+      padding-right: 22px;
+      color:#fff
+     
+   }
+    a{
+      font-size: 36px;
+      }
+  }
     }
   }
-  .navInfoSocial{
-    display: flex;
-    justify-content: space-between;
-            .nvaIfo{
-               .contact-nav{
-                :not(:last-child){ 
-                  padding-right: 48px;
-                }
-
-                }
-               .contact-info{
-             li{
-              .material-symbols-outlined {
-                 padding-right: 22px;
-              }
-               a{
-                 font-size: 36px;
-                 }
-             }
-               }
-             }
-          
-            .social{
-              .icon{
-                &:hover {
-                  filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
-                }
-              
-                width: 48px;
-                height: 48px;  }
-             }
-             
-           
-            
+  
+  .social{
+   li{
+    &:not(:last-child){
+      margin-right: 32px;
+    }
+   } 
+    .icon{
+      &:hover {
+        // filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
+        @include linkHover;
+      }
+      width: 48px;
+      height: 48px;  }
    }
 
+  .copyRight{
+    padding: 32px 12px;
+      color: #fff;
+      .policy{
+        display: flex;
+        a{
+          display: block;
+          
+        }
+      }
+  }
   //footer RWD
   //ipod
   // @media(max-width:768px)

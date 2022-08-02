@@ -25,8 +25,12 @@
     text-decoration: none;
     color:white;
     display: block;
+      &:hover {
+        color:gray;
+      }
+    }
 
-  }
+  
   
   
   img {
@@ -105,7 +109,9 @@
   .pr-16{
     padding-right: 64px;
   }
-  
+  .mr-12{
+    margin-right: 48px;
+  }
   .mr-16{
     margin-right: 64px;
   }
@@ -130,7 +136,7 @@
     border-bottom:1px solid #fff;
   }
   .container {
-    max-width:  1296px;
+    max-width:  1320px;
     margin: 0 auto;
     padding: 0 12px;
   }
