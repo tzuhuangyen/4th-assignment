@@ -39,10 +39,12 @@
 
     
 <div class="banner">
-  <div class="title">
-    <span>Promise-Desert 2020 早春系列</span>
-    <h2>看得清，才能看得遠</h2>
-    <button class="btn"><a href="#">立即購買</a></button>
+  <div class="container">
+    <div class="title">
+      <span>Promise-Desert 2020 早春系列</span>
+      <h2>看得清，才能看得遠</h2>
+      <button><a href="#">立即購買</a></button>
+    </div>
   </div>
 </div>
 
@@ -171,7 +173,7 @@
         </div>
         <div class="mb-4">
           <label for="tel">聯絡電話</label>
-          <input type="number" id="phone" placeholder="0912-345-678" />
+          <input type="text" id="phone" placeholder="0912-345-678" />
         </div>
         <div class="mb-4">
           <label for="email">電子郵件</label>
@@ -187,12 +189,10 @@
             placeholder="請輸入您的意見"
           />
         </div>
-        <div class="pb-12">
+        <div class="checkBoxSet pb-12">
+          <input class="checkbox" type="checkbox" id="check" name="agree" />
           <label for="check">
-            <input class="checkbox" type="checkbox" id="check" name="agree" />
-            <span
-              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-            </span>
+            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
           </label>
         </div>
         <button class="btn"><a href="#">確認送出</a></button>
@@ -206,7 +206,7 @@
       <div class="container borderB-white">
         <div class="navInfoSocial">
           <div class="navInfo pt-12">
-            <ul class="contact-nav d-flex">
+            <ul class="contact-nav">
               <li><a href="#">首頁</a></li>
               <li><a href="#">系列鏡框</a></li>
               <li><a href="#">系列鏡框</a></li>
@@ -215,27 +215,23 @@
             </ul>
             <ul class="contact-info">
               <li>
-                <a href="tel:+0800-000-00">
-                  <span class="material-icons material-symbols-outlined md-36"
-                    >call</span
-                  >
-                  <span>0800-000-00</span>
-                </a>
+                <span class="material-icons material-symbols-outlined md-36"
+                  >call</span
+                >
+                <a href="tel:+0800-000-00">0800-000-00</a>
               </li>
 
               <li>
-                <a href="mailtoglasses@business.co">
-                  <span class="material-icons material-symbols-outlined md-36"
-                    >mail</span
-                  >
-                  <span>glasses@business.co</span>
-                </a>
+                <span class="material-icons material-symbols-outlined md-36"
+                  >mail</span
+                >
+                <a href="mailtoglasses@business.co"> glasses@business.co </a>
               </li>
             </ul>
           </div>
-          <div class="social">
+          <div>
             <ul class="social d-flex">
-              <li class="mr-32">
+              <li>
                 <a href=""
                   ><img
                     src="./assets/images/ic-social-fb.png"
@@ -243,7 +239,7 @@
                     class="icon"
                 /></a>
               </li>
-              <li class="mr-32">
+              <li>
                 <a href=""
                   ><img
                     src="./assets/images/ic_social_ig.png"
@@ -264,9 +260,9 @@
         </div>
         <div class="copyRight container d-flex jcsb">
           <p class="pb-2">Copyright &copy; 2020 Glasses.All rights reserved.</p>
-          <div class="policy d-flex">
-            <p class="pb-2">隱私權政策</p>
-            <p>服務條款</p>
+          <div class="policy">
+            <p class="mr-12"><a class="pb-2" href="#">隱私權政策</a></p>
+            <p><a href="#">服務條款</a></p>
           </div>
         </div>
       </div>
