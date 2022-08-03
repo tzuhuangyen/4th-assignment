@@ -1,43 +1,60 @@
   footer{
     background-color: $primary;
     padding-top: 48px;
+    @include phone{
+      padding-top: 24px;
+    }
     .navInfoSocial{
       display: flex;
       justify-content: space-between;
       border-bottom:1px solid #fff;    
             
      }
-   
   }
   .navInfo{
     
     .contact-nav{
      display: flex;
      justify-content: space-between;
+     @include phone{
+      display: none;
+     }
      li{
       &:hover {
       @include linkHover;
-    }}
-     }
-    .contact-info{
-    margin-top: 44px;
-     margin-bottom: 32px;
-    li{
-      &:hover {
-        @include linkHover;
+      }
       }
     }
+    .contact-info{
+     margin-top: 44px;
+     margin-bottom: 32px;
+     @include phone{
+      margin: 0 auto 24px;
+     
+     }
+
   li{
-   display: flex;
-   align-items: center;
+    &:hover {
+      @include linkHover;
+    }
+    display: flex;
+    align-items: center;
 
    .material-symbols-outlined {
       padding-right: 22px;
-      color:#fff
+      color:#fff;
+      @include phone{
+        font-size: 18px;
+        padding-right: 11px;
+      }
+     
      
    }
     a{
       font-size: 36px;
+      @include phone{
+        font-size: 16px;
+      }
       }
   }
     }
@@ -47,6 +64,11 @@
    li{
     &:not(:last-child){
       margin-right: 32px;
+      @include pad{
+        margin-right: 16px;
+      }
+      @include phone{
+        margin-right: 8px;}
     }
    } 
     .icon{
@@ -55,85 +77,40 @@
         @include linkHover;
       }
       width: 48px;
-      height: 48px;  }
+      height: 48px;  
+      @include pad{
+        width: 40px;
+        height: 40px;  
+      }
+      @include phone{
+        width: 24px;
+        height: 24px;
+      }
+    }
    }
 
   .copyRight{
     padding: 32px 12px;
+    @include phone{
+      padding-top: 16px;
+      padding-bottom: 24px;
+      flex-direction: column;
+    }
       color: #fff;
       .policy{
         display: flex;
+        @include phone{
+          flex-direction: column;
+        }
         a{
           display: block;
-          
+          font-size: 14px;
+          @include phone{
+            font-size: $font-size-base;
+          }
         }
       }
   }
-  //footer RWD
-  //ipod
-  // @media(max-width:768px)
+ 
   
-  // phone
-  @media(max-width:576px){
-    footer{
-      padding-top: 24px;
-      .container{
-        max-width: 375px;
-        display: flex;
-        flex-direction: column;
-        .contact{
-   
-          .contact-nav{
-              :not(:last-child) {
-              margin-right: 0px;
-          }
-          display: none;
-            // font-size: 4px;
-      // opacity: 0;    
-          }
-          .contact-info{
-            width: 70%;
-        padding-bottom: 0;
-            li{
-              padding-bottom: 8px;
-              .material-icons {
-                font-size: 18px;
-              }
-              a{
-                font-size: 16px;
-              }
-            }
-            
-          }
-      
-          .social{
-            order: 1;
-      
-            li{
-            margin-right: 8px;
-          
-            img{
-              width: 24px;
-              height: 24px;
-            }
-          }
-          }
-        }
-      }
-      .copyRight{
-    flex-direction: column;
-    padding-top: 16px;
-    padding-bottom: 24px;
-  
-    .policy{
-      flex-direction: column;
-      p{
-        font-family: "Noto Sans TC";
-      }
-  
-    }
-      }
-     
-      
-    }
-  }  
+ 

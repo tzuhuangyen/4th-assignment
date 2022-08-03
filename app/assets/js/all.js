@@ -1,5 +1,9 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
+$(document).ready(function () {
+  $(".menuBtn").click(function (event) {
+    $(".nav").slideToggle();
+  });
 });
+
+// $(document).ready(function () {
+//   $(this).hide();
+// });
