@@ -271,7 +271,8 @@ header {
 
 .title {
   color: #650300;
-  text-align: right; }
+  text-align: right;
+  width: 100%; }
   .title span {
     font-size: 2.25rem; }
     @media (max-width: 576px) {
