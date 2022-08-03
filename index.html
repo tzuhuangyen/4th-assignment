@@ -26,14 +26,20 @@
     <header>
       <div class="container d-flex jcsb a-items-c">
         <h1 class="py-4">
-          <a href="#">眼鏡官網</a>
+          <a href="./index.html">眼鏡官網</a>
         </h1>
         <ul class="nav d-flex flex-wrap text-white">
-          <li><a href="#">系列鏡框</a></li>
-          <li><a href="#">門市據點</a></li>
-          <li><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
+          <li class="nav-item"><a href="#">系列鏡框</a></li>
+          <li class="nav-item"><a href="#">門市據點</a></li>
+          <li class="nav-item"><a href="#">部落格</a></li>
+          <li class="nav-item"><a href="#">常見問題</a></li>
         </ul>
+        <!-- RWD 漢堡選單按鈕 -->
+        <a class="navBtn" href="#"
+          ><span class="material-symbols-outlined material-icons md-40"
+            >menu</span
+          ></a
+        >
       </div>
     </header>
 
@@ -122,38 +128,38 @@
           <img src="./assets/images/home-section5-1.png" alt="review" />
           <div class="p-4">
             <div class="pb-12">
-              <p class="pb-2">Jessy</p>
+              <span class="pb-2">Jessy</span>
               <p>眼鏡品質優良，下次還會想來這邊購買！</p>
             </div>
-            <span>2021/06/20</span>
+            <time>2021/06/20</time>
           </div>
         </li>
         <li>
           <img src="./assets/images/home-section5-2.png" alt="review" />
           <div class="p-4">
-            <p>凱倫</p>
+            <spam>凱倫</spam>
             <p class="pb-12">
               做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
             </p>
-            <span>2021/04/18</span>
+            <time>2021/04/18</time>
           </div>
         </li>
         <li>
           <img src="./assets/images/home-section5-3.png" alt="review" />
           <div class="p-4">
-            <p class="pb-2">悠悠</p>
+            <span class="pb-2">悠悠</span>
             <p class="pb-12">
               謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
             </p>
-            <span>2020/12/25</span>
+            <time>2020/12/25</time>
           </div>
         </li>
         <li>
           <img src="./assets/images/home-section5-4.png" alt="review" />
           <div class="p-4">
-            <p class="pb-2">Kyuan</p>
+            <span class="pb-2">Kyuan</span>
             <p class="pb-12">服務很好，品質沒有任何問題，非常喜歡。</p>
-            <span>2020/10/31</span>
+            <time>2020/10/31</time>
           </div>
         </li>
       </ul>
@@ -269,5 +275,10 @@
     </footer>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
