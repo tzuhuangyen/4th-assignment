@@ -29,7 +29,7 @@
   .title{
     color:$secondary;
     text-align: right;
-    
+    width: 100%;
     span{
       font-size: $h3-text;
       @include phone{
