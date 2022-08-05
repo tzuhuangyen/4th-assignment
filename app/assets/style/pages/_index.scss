@@ -1,344 +1,325 @@
-  .banner{
-    background-image: url("../images/home-header.png");
+.banner {
+  background-image: url("../images/home-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include pad {
+    background-image: url("../images/home-header-sm.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    @include pad{
-      background-image: url("../images/home-header-sm.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 787px;
-    }
-    @include phone{
-      height: 396px;
-      background-position: 0 70px;
-
-    }
-    .container{
-      width: 100%;
-      @include pad{
-        padding: 0 36px;
-      }
-    }
+    background-position: center;
+    height: 787px;
   }
-  
-  .title{
-    color:$secondary;
+  @include phone {
+    height: 396px;
+    margin-top: 80px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    color: $secondary;
     text-align: right;
     width: 100%;
-    span{
+    span {
       font-size: $h3-text;
-      @include phone{
+      @include phone {
         font-size: $font-size-base;
       }
     }
-   
-    h2{
+
+    h2 {
       font-size: 68px;
       font-weight: bold;
-      color:$secondary;
-      @include phone{
-font-size: $h4-text;
+      color: $secondary;
+      @include pad {
+        width: 576px;
       }
- 
+      @include phone {
+        font-size: $h4-text;
+      }
     }
-    button{
+    button {
       border-width: 0;
-    a{
-      background-color:$primary;
-      color: #fff;
+      a {
+        background-color: $primary;
+        color: #fff;
         font-size: $h5-text;
         padding: 6px 12px;
-   
-    }
-       
-      }
-  }
-
-
-  
-
-  //do section
-  .do{
-    background-color:#FBF2F2;
-    @include pad{
-      padding-bottom:80px ;
-    }
-    @include phone{
-      padding-bottom: 40px;
-    }
-   
-    h2{
-      @include subTitle;
-      padding-bottom: 32px;
-      @include phone{
-        font-size: $h4-text;
-        padding-top: 40px;
       }
     }
-    ul{
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-  @include pad{
-    flex-wrap: wrap;
-  }
-    }
-      li{
-
-        width: calc(25% - 24px);
-        @include pad{
-          width:calc(50% - 24px);
-          padding-bottom: 36px;
-        }
-        @include phone{
-          width:calc(100% - 13px);
-          padding-bottom: 32px;
-          
-          
-        }
-        padding-bottom: 80px;
-           
-    img{
-      width: 100px;
-    }
-   
-    h3{
-      color: #650300;
-      font-size: $h4-text;
-      font-weight: 700;
-      
-    }
-    p{
-      font-size: $font-size-base;
-text-align: left;
-    }
-     }
-  }
-
-.classic{
-  @include pad{
-    margin-bottom: 80px;
-  }
-  @include phone{
-    margin-bottom: 40px;
-  }
-
-  h2{
-    @include subTitle;
-    @include phone{
-      font-size: $h4-text;
-      padding-top: 40px;
-      padding-bottom: 24px;
-    }
-  }
-  
-  ul{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @include pad{
-      justify-content: center;
-    }
-    li{
-    width: calc(33.33% - 24px);
-    @include pad{
-      width: 55%;
-    }
-    @include phone{
-      width: 100%;
-    }
-    }
-  }
-  h3{
-    font-size: $h2-text;
-    color: $primary;
-    font-weight:900;
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 80px;
-    @include pad{
-      padding-top: 8px;
-      padding-bottom: 24px;
-    }
-   
   }
 }
 
-  .design{
-    background-image: url("../images/index-bg.png");
-    padding-bottom: 80px;
-    @include phone{
-      padding-bottom: 40px;
+//do section
+.do {
+  background-color: #fbf2f2;
+  @include pad {
+    padding-bottom: 44px;
+  }
+  @include phone {
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    @include subTitle;
+    padding-bottom: 32px;
+    @include phone {
+      font-size: $h4-text;
+      padding-top: 40px;
     }
-    
-    h2{
-      @include subTitle;
-      color:#fff ;
-      @include phone{
-        padding-top: 40px;
-        padding-bottom: 24px;
-      }
-
-     }
-    ul{
-      display: flex;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    @include pad {
       flex-wrap: wrap;
-      li{
-        width: 50%;
-        @include pad{
-          width: 100%;
-          margin-bottom: 24px;
-        }
-       
-      }
-     }
+    }
   }
-  //design-h3
-  .design{
-    h3{
-      padding: 8px 0;
-      color:$primary;
-       background-color: #fff;
-       font-size: 48px;
-       font-weight: 700;
-       font-style: italic;
-       text-align: center;
-     }
+  li {
+    width: calc(25% - 24px);
+    @include pad {
+      width: calc(50% - 24px);
+      padding-bottom: 36px;
+    }
+    @include phone {
+      width: calc(100% - 13px);
+      padding-bottom: 32px;
+    }
+    padding-bottom: 80px;
+
+    img {
+      width: 100px;
+    }
+
+    h3 {
+      color: #650300;
+      font-size: $h4-text;
+      font-weight: 700;
+    }
+    p {
+      font-size: $font-size-base;
+      text-align: left;
+    }
+  }
+}
+
+.classic {
+  @include pad {
+    margin-bottom: 80px;
+  }
+  @include phone {
+    margin-bottom: 40px;
   }
 
-  .review{
-    h2{
-     @include subTitle;
-     @include phone{
+  h2 {
+    @include subTitle;
+    @include phone {
       font-size: $h4-text;
       padding-top: 40px;
       padding-bottom: 24px;
     }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad {
+      justify-content: center;
     }
-    ul{
-      display: flex;
-      padding-bottom: 80px;
-      @include phone{
-        padding-bottom: 40px;
+    li {
+      width: calc(33.33% - 24px);
+      @include pad {
+        width: 55%;
       }
-      justify-content: space-between;
-     flex-wrap: wrap;
-      li{
-        width: calc(25% - 24px);
-        box-shadow: 0 2px 6px #00000029;
-        border-radius: 4px;
-       @include pad{
-        width: calc(50% - 24px);
-        margin-bottom: 24px;
-       }
-       @include phone{
+      @include phone {
         width: 100%;
-       }
-      }
-    }
-    span{
-      font-size: $font-size-base;
-      color:black;
-      font-weight: 700;
-    
-       }
-    p{
-      @include phone{
-        padding-bottom: 96px;
       }
     }
   }
+  h3 {
+    font-size: $h2-text;
+    color: $primary;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 80px;
+    @include pad {
+      padding-top: 8px;
+      padding-bottom: 24px;
+    }
+  }
+}
 
-  .meg{
-    background-color:$lightBg;
-    .container{
-      max-width: 636px;
-      margin: 0 auto;
-      padding-bottom: 80px;
-  @include phone{
+.design {
+  background-image: url("../images/index-bg.png");
+  padding-bottom: 80px;
+  @include phone {
     padding-bottom: 40px;
   }
-      h2{
-        @include subTitle;
-        @include pad{
-          padding-bottom: 24px;
-        }
-        @include phone{
-          font-size: $h4-text;
-          padding-top: 40px;
-          padding-bottom: 24px;
-        }
-      }
-      p{
-        font-size: $h5-text;
-        padding-bottom: 24px;
-        @include pad{
-          font-size: $font-size-base;
-        }
-      }
-  
-    }
-    label{
-      margin-bottom: 8px;
-     
-      width: 100%;
-    }
-     input{
-      width: 100%;
-      background-color:$lightBg;
-      padding: 6px 12px;
-      
+
+  h2 {
+    @include subTitle;
+    color: #fff;
+    @include phone {
+      padding-top: 40px;
+      padding-bottom: 24px;
     }
   }
-  .message{
-        padding: 6px 12px;
-        background-color:$lightBg;     
-        height: 136px;
-   }
-   .checkBoxSet{
-        display: flex;
-        align-items: flex-start;
-        @include phone{
-          padding-bottom: 24px;
-        }
-       }
-   .info{
-    height: 136px;
-    resize:none;
-   }
-   .btn{
-          // margin: 0 50px 80px 105px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      @include pad {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+//design-h3
+.design {
+  h3 {
+    padding: 8px 0;
+    color: $primary;
+    background-color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.review {
+  h2 {
+    @include subTitle;
+    @include phone {
+      font-size: $h4-text;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+  }
+  ul {
+    display: flex;
+    padding-bottom: 80px;
+    @include phone {
+      padding-bottom: 40px;
+    }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: calc(25% - 24px);
+      box-shadow: 0 2px 6px #00000029;
+      border-radius: 4px;
+      @include pad {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+  }
+  span {
+    font-size: $font-size-base;
+    color: black;
+    font-weight: 700;
+  }
+  p {
+    @include phone {
+      padding-bottom: 96px;
+    }
+  }
+}
+
+.meg {
+  background-color: $lightBg;
+  .container {
+    max-width: 636px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    @include phone {
+      padding-bottom: 40px;
+    }
+    h2 {
+      @include subTitle;
+      @include pad {
+        padding-bottom: 24px;
+      }
+      @include phone {
+        font-size: $h4-text;
+        padding-top: 40px;
+        padding-bottom: 24px;
+      }
+    }
+    p {
+      font-size: $h5-text;
+      padding-bottom: 24px;
+      @include pad {
+        font-size: $font-size-base;
+      }
+    }
+  }
+  label {
+    margin-bottom: 8px;
+
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    background-color: $lightBg;
+    padding: 6px 12px;
+  }
+}
+.message {
+  padding: 6px 12px;
+  background-color: $lightBg;
+  height: 136px;
+}
+.checkBoxSet {
+  display: flex;
+  align-items: flex-start;
+  @include phone {
+    padding-bottom: 24px;
+  }
+}
+.info {
+  height: 136px;
+  resize: none;
+}
+.btn {
+  // margin: 0 50px 80px 105px;
   display: block;
   margin: 0 auto;
-          background-color: $primary;
-          width: 70%;
-          @include pad{
-            width: 60%;
-          }
-          @include phone{
-            width: 100%;
-          }
-          padding-top: 16px;
-          padding-bottom: 16px;
-          color: #fff;
-          a{
-            font-size: $h4-text;
-            @include pad{
-              font-size: $font-size-base;
-            }
-          }
-        } 
-  
-    .meg input.checkbox{
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
-      }     
-  
-    
+  background-color: $primary;
+  width: 70%;
+  @include pad {
+    width: 60%;
+  }
+  @include phone {
+    width: 100%;
+  }
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+  a {
+    font-size: $h4-text;
+    @include pad {
+      font-size: $font-size-base;
+    }
+  }
+}
 
+.meg input.checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  margin-top: 4px;
+}

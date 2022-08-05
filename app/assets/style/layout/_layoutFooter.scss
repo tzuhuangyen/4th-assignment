@@ -1,116 +1,113 @@
-  footer{
-    background-color: $primary;
-    padding-top: 48px;
-    @include phone{
-      padding-top: 24px;
-    }
-    .navInfoSocial{
-      display: flex;
-      justify-content: space-between;
-      border-bottom:1px solid #fff;    
-            
-     }
+footer {
+  background-color: $primary;
+  padding-top: 48px;
+  @include phone {
+    padding-top: 24px;
   }
-  .navInfo{
-    
-    .contact-nav{
-     display: flex;
-     justify-content: space-between;
-     @include phone{
-      display: none;
-     }
-     li{
-      &:hover {
-      @include linkHover;
-      }
-      }
-    }
-    .contact-info{
-     margin-top: 44px;
-     margin-bottom: 32px;
-     @include phone{
-      margin: 0 auto 24px;
-     
-     }
-
-  li{
-    &:hover {
-      @include linkHover;
-    }
+  .navInfoSocial {
     display: flex;
-    align-items: center;
-
-   .material-symbols-outlined {
-      padding-right: 22px;
-      color:#fff;
-      @include phone{
-        font-size: 18px;
-        padding-right: 11px;
-      }
-     
-     
-   }
-    a{
-      font-size: 36px;
-      @include phone{
-        font-size: 16px;
-      }
-      }
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
   }
+}
+.navInfo {
+  .contact-nav {
+    display: flex;
+    justify-content: space-between;
+    @include phone {
+      display: none;
     }
-  }
-  
-  .social{
-   li{
-    &:not(:last-child){
-      margin-right: 32px;
-      @include pad{
-        margin-right: 16px;
-      }
-      @include phone{
-        margin-right: 8px;}
-    }
-   } 
-    .icon{
+    li {
       &:hover {
-        // filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
         @include linkHover;
       }
-      width: 48px;
-      height: 48px;  
-      @include pad{
-        width: 40px;
-        height: 40px;  
+    }
+  }
+  .contact-info {
+    margin-top: 44px;
+    margin-bottom: 32px;
+    @include phone {
+      margin: 0 auto 24px;
+    }
+
+    li {
+      &:hover {
+        @include linkHover;
       }
-      @include phone{
-        width: 24px;
-        height: 24px;
+      display: flex;
+      align-items: center;
+
+      .material-symbols-outlined {
+        padding-right: 22px;
+        color: #fff;
+        @include phone {
+          font-size: 18px;
+          padding-right: 11px;
+        }
+      }
+      a {
+        font-size: $h3-text;
+        @include phone {
+          padding: 8px 0;
+          font-size: $font-size-base;
+        }
       }
     }
-   }
+  }
+}
 
-  .copyRight{
-    padding: 32px 12px;
-    @include phone{
-      padding-top: 16px;
-      padding-bottom: 24px;
+.social {
+  li {
+    &:not(:last-child) {
+      margin-right: 32px;
+      @include pad {
+        margin-right: 1px;
+      }
+      @include phone {
+        margin-right: 8px;
+      }
+    }
+    a {
+      @include phone {
+        padding: 8px 0;
+      }
+    }
+  }
+  .icon {
+    &:hover {
+      // filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
+      @include linkHover;
+    }
+    width: 48px;
+    @include pad {
+      width: 40px;
+    }
+    @include phone {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.copyRight {
+  padding: 32px 12px;
+  @include phone {
+    padding: 16px 0 24px 0;
+    flex-direction: column;
+  }
+  color: #fff;
+  .policy {
+    display: flex;
+    @include phone {
       flex-direction: column;
     }
-      color: #fff;
-      .policy{
-        display: flex;
-        @include phone{
-          flex-direction: column;
-        }
-        a{
-          display: block;
-          font-size: 14px;
-          @include phone{
-            font-size: $font-size-base;
-          }
-        }
+
+    a {
+      display: block;
+      font-size: $sm-text;
+      @include phone {
+        padding-right: 8px;
       }
+    }
   }
- 
-  
- 
+}

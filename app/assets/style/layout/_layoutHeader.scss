@@ -1,84 +1,68 @@
 // h1
-header{
-    background-color:$primary;
-    .container{
-    
-      @include phone{
-    padding: 0 20px;
-    }}
-   h1{
-  
-    a{
-    background-image: url("../images/logo-white.png");
-    background-size: cover;
-    width: 90px;
-    height: 55px;
-    // 圖片取代文字技巧
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
-    display: block;
-   
-   }
+header {
+  background-color: $primary;
+
+  h1 {
+    a {
+      background-image: url("../images/logo-white.png");
+      background-size: cover;
+      width: 90px;
+      height: 55px;
+      @include phone {
+        width: 80px;
+        height: 48px;
+      }
+      // 圖片取代文字技巧
+      text-indent: 130%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
 }
 
 // nav
-header{
-  
-  @include phone{
+header {
+  @include phone {
     width: 100%;
     position: fixed;
+    top: 0;
   }
 }
-  .nav{
-    :not(:last-child){ margin-right: 64px;}
+.nav {
+  :not(:last-child) {
+    margin-right: 64px;
+  }
+  @include phone {
+    :not(:last-child) {
+      margin-right: 0px;
+    }
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    //讓選單向上推出 header 的空間，避免選單展開時會遮擋住 header
+    width: 100%;
+    // max-height: 0px;
+    // overflow: hidden;
+    text-align: center;
+  }
+  .nav-item {
+    font-size: $h5-text;
+    font-weight: normal;
+  }
+}
 
-    @include phone{
-      :not(:last-child){ margin-right: 0px;}
-      position: absolute;
-      display: none;
-      width: 100%;
-      max-height: 500px;
-      top: 85px;
-       text-align: center;
-    }      
-    .nav-item{
-         font-size: $h5-text;
-         font-weight: normal;
-         @include phone{
-          background-color: rgba(0, 0, 0, 0.8);
-         }
-         a{
-          display: block;
-          @include phone{
-            padding: 16px 0;
-          }
-         }
+// RWD 漢堡選單
+.navBtn {
+  display: none;
+  @include phone {
+    display: block;
+  }
+  a {
+    .material-symbols-outlined {
+      color: white;
+      font-size: 48px;
     }
   }
-// RWD 漢堡選單
-.navBtn{
-  display: none;
-  @include phone{
-    display: block;
-  }
-  a{
-    display: block;
-    .material-symbols-outlined {
-      color:white;
-      font-size: 48px;
-  }
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
