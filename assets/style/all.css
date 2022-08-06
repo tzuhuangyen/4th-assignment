@@ -603,21 +603,22 @@ header {
 .active {
   border-bottom: 5px solid #aa0601; }
 
-.prodBanner-left {
+.prodBanner .prodBanner-left {
   background-image: url("../images/product-header-1.png");
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 296px;
+  max-width: 50%;
   background-position: top left;
-  background-size: cover;
-  width: 50%;
-  height: 296px; }
+  display: inline; }
 
-.prodBanner-right {
-  background-image: url("../images/roduct-header-2.png");
+.prodBanner .prodBanner-right {
+  background-image: url("../images/product-header-2.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-  width: 50%;
-  height: 296px; }
+  background-size: contain;
+  max-width: 50%;
+  height: 296px;
+  background-position: top right; }
 
 footer {
   background-color: #AA0601;

@@ -4,8 +4,8 @@ $(document).ready(function () {
   $(".navBtn").click(function () {
     $(".nav").slideToggle();
   });
-  $("li").click(function (e) {
-    e.preventDefault();
+  $(".productType").click(function () {
+    // e.preventDefault();
     $(this).toggleClass("active");
     $(this).siblings().removeClass("active");
   });
