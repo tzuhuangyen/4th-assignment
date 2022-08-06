@@ -1,10 +1,13 @@
 "use strict";
 
 $(document).ready(function () {
-  $(".navBtn").click(function (event) {
+  $(".navBtn").click(function () {
     $(".nav").slideToggle();
   });
-}); // $(document).ready(function () {
-//   $(this).hide();
-// });
+  $("li").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(this).siblings().removeClass("active");
+  });
+});
 //# sourceMappingURL=all.js.map

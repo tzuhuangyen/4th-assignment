@@ -237,6 +237,9 @@ header {
 .nav .nav-item {
   font-size: 1.25rem;
   font-weight: normal; }
+  @media (max-width: 375px) {
+    .nav .nav-item {
+      padding: 5px 5px; } }
 
 .navBtn {
   display: none; }
@@ -287,9 +290,6 @@ header {
       font-size: 68px;
       font-weight: bold;
       color: #650300; }
-      @media (max-width: 768px) {
-        .banner .title h2 {
-          width: 576px; } }
       @media (max-width: 375px) {
         .banner .title h2 {
           font-size: 1.5rem; } }
@@ -399,7 +399,7 @@ header {
         width: 100%; } }
 
 .classic h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #AA0601;
   font-weight: 900;
   font-style: italic;
@@ -581,6 +581,43 @@ header {
   height: 24px;
   margin-right: 5px;
   margin-top: 4px; }
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center; }
+  .products li {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    .products li:not(:last-child) {
+      border-right: 1px solid #dcdcdc; }
+    .products li a {
+      color: black;
+      font-size: 32px; }
+
+.active {
+  border-bottom: 5px solid #aa0601; }
+
+.prodBanner-left {
+  background-image: url("../images/product-header-1.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  width: 50%;
+  height: 296px; }
+
+.prodBanner-right {
+  background-image: url("../images/roduct-header-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  width: 50%;
+  height: 296px; }
 
 footer {
   background-color: #AA0601;
