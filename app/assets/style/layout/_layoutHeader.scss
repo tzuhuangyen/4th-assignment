@@ -36,6 +36,7 @@ header {
     :not(:last-child) {
       margin-right: 0px;
     }
+
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     position: absolute;
@@ -50,6 +51,9 @@ header {
   .nav-item {
     font-size: $h5-text;
     font-weight: normal;
+    @include phone {
+      padding: 5px 5px;
+    }
   }
 }
 
