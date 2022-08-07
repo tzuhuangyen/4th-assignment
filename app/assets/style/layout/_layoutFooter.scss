@@ -61,7 +61,7 @@ footer {
     &:not(:last-child) {
       margin-right: 32px;
       @include pad {
-        margin-right: 1px;
+        margin-right: 16px;
       }
       @include phone {
         margin-right: 8px;

@@ -32,6 +32,7 @@ header {
   :not(:last-child) {
     margin-right: 64px;
   }
+
   @include phone {
     :not(:last-child) {
       margin-right: 0px;

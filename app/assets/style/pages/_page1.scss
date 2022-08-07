@@ -1,13 +1,20 @@
 .products {
   display: flex;
   justify-content: space-evenly;
-  // padding-bottom: 24px;
+  margin-top: -22px;
 
+  @include phone {
+    margin-top: 55px;
+  }
   text-align: center;
   li {
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
+    @include pad {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     &:not(:last-child) {
       border-right: 1px solid #dcdcdc;
     }
@@ -15,31 +22,134 @@
     a {
       color: black;
       font-size: 32px;
+      @include pad {
+        font-size: $h4-text;
+      }
+      @include phone {
+        font-size: $font-size-base;
+      }
     }
   }
 }
 
-.active {
-  border-bottom: 5px solid #aa0601;
-}
-
 .prodBanner {
+  display: flex;
   .prodBanner-left {
     background-image: url("../images/product-header-1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: 296px;
-    max-width: 50%;
-    background-position: top left;
-    display: inline;
+    width: 790px;
+    @include pad {
+      width: 384px;
+    }
+    @include phone {
+      background-image: url("../images/product-header-sm-1.png");
+      width: 188px;
+    }
   }
 
   .prodBanner-right {
     background-image: url("../images/product-header-2.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 50%;
+    background-size: cover;
     height: 296px;
-    background-position: top right;
+    width: 790px;
+    background-position: center;
+    @include pad {
+      width: 384px;
+    }
+    @include phone {
+      background-image: url("../images/product-header-sm-2.png");
+      width: 188px;
+    }
   }
+}
+
+//products
+.optical-title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 32px;
+  h2 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "roboto";
+  }
+  span {
+    font-size: 32px;
+  }
+}
+
+.optical-cards {
+  display: flex;
+  justify-content: space-between;
+  @include phone {
+    justify-content: center;
+  }
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  .opticalCard {
+    width: calc(25% - 24px);
+    margin-bottom: 80px;
+    @include pad {
+      width: calc(50% - 24px);
+      margin-bottom: 40px;
+    }
+    @include phone {
+      width: calc(100% - 24px);
+      margin-bottom: 24px;
+    }
+  }
+  .card-body {
+    h3,
+    p {
+      font-size: $h4-text;
+    }
+    p {
+      color: $primary;
+      font-weight: 700;
+    }
+    .brown,
+    .lightB {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .brown {
+      background-color: #5f3e2d;
+    }
+    .lightB {
+      background-color: #b75929;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+
+  a {
+    color: #555555;
+    font-size: 18px;
+    padding: 12px 16px;
+    @include phone {
+      padding: 11px 14px 12px 13px;
+    }
+    border: 1px solid #555555;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.lastPage,
+.nextPage {
+  background-color: #f2f2f2;
 }
