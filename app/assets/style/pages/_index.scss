@@ -48,6 +48,10 @@
         color: #fff;
         font-size: $h5-text;
         padding: 6px 12px;
+        &:hover {
+          background-color: rgb(233, 166, 166);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -80,13 +84,17 @@
     }
   }
   li {
-    width: calc(25% - 24px);
+    // width: calc(25% - 24px);
+    width: 25%;
+    padding: 0 12px;
     @include pad {
-      width: calc(50% - 24px);
+      // width: calc(50% - 24px);
+      width: 50%;
       padding-bottom: 36px;
     }
     @include phone {
-      width: calc(100% - 13px);
+      // width: calc(100% - 13px);
+      width: 100%;
       padding-bottom: 32px;
     }
     padding-bottom: 80px;
@@ -237,10 +245,11 @@
   }
 }
 
+//聯絡我們區塊
+
 .meg {
   background-color: $lightBg;
   .container {
-    max-width: 636px;
     margin: 0 auto;
     padding-bottom: 80px;
     @include phone {
@@ -260,6 +269,7 @@
     p {
       font-size: $h5-text;
       padding-bottom: 24px;
+      width: 50%;
       @include pad {
         font-size: $font-size-base;
       }
@@ -275,6 +285,9 @@
     background-color: $lightBg;
     padding: 6px 12px;
   }
+}
+form {
+  width: 50%;
 }
 .message {
   padding: 6px 12px;

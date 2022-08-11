@@ -106,6 +106,9 @@ a {
   margin-right: 64px;
 }
 
+.mt-2 {
+  margin-top: 8px;
+}
 .mb-4 {
   margin-bottom: 16px;
 }
@@ -114,6 +117,9 @@ a {
 }
 .mb-12 {
   margin-bottom: 48px;
+}
+.mb-18 {
+  margin-bottom: 72px;
 }
 .mb-20 {
   margin-bottom: 80px;
@@ -127,9 +133,9 @@ a {
 }
 
 .container {
-  max-width: 1326px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 12px;
 
   /* 依照設計稿 PC 版：
    * 容器寬度為 1296px，因為有設定為 border-box，所以整體寬度需加上左右 padding
@@ -137,7 +143,6 @@ a {
    * （關於 box-sizing 觀念可以再回顧 Day7 每日任務 或是第三週穎老師）*/
   @include pad {
     max-width: 720px;
-    padding: 0 12px;
     //容器已經加了左右padding各12px(696+12+12)
   }
   @include phone {

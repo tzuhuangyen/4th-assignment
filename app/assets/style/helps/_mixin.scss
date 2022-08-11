@@ -1,25 +1,24 @@
 @mixin subTitle {
-    font-size: $h2-text;
-    color: $secondary;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 48px;
-    font-weight: 700;
+  font-size: $h2-text;
+  color: $secondary;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 48px;
+  font-weight: 700;
+}
+
+@mixin linkHover {
+  filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
+} //參考學姊
+
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
   }
-
-  @mixin linkHover {
-    filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
-  } //參考學姊
-
-  @mixin pad {
-    @media(max-width:768px){
-        @content
-    }
-};
-
+}
 
 @mixin phone {
-    @media (max-width:375px){
-        @content
-    }
+  @media (max-width: 767px) {
+    @content;
+  }
 }
