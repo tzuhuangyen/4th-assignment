@@ -639,14 +639,16 @@ form {
     background-size: cover;
     background-position: top center;
     height: 296px;
-    width: 790px; }
+    width: 790px;
+    -o-object-fit: cover;
+       object-fit: cover; }
     @media (max-width: 992px) {
       .prodBanner .prodBanner-left {
-        width: 384px; } }
+        width: 960px; } }
     @media (max-width: 767px) {
       .prodBanner .prodBanner-left {
         background-image: url("../images/product-header-sm-1.png");
-        width: 188px; } }
+        width: 384px; } }
   .prodBanner .prodBanner-right {
     background-image: url("../images/product-header-2.png");
     background-repeat: no-repeat;
@@ -656,11 +658,11 @@ form {
     background-position: center; }
     @media (max-width: 992px) {
       .prodBanner .prodBanner-right {
-        width: 384px; } }
+        width: 960px; } }
     @media (max-width: 767px) {
       .prodBanner .prodBanner-right {
         background-image: url("../images/product-header-sm-2.png");
-        width: 188px; } }
+        width: 384px; } }
 
 .optical-title {
   text-align: center;
@@ -699,6 +701,8 @@ form {
       .optical-cards .opticalCard {
         width: calc(100% - 24px);
         margin-bottom: 24px; } }
+    .optical-cards .opticalCard .colors a:hover {
+      cursor: pointer; }
   .optical-cards .card-body h3,
   .optical-cards .card-body p {
     font-size: 1.5rem; }
@@ -735,6 +739,7 @@ form {
     border: 1px solid #555555; }
     @media (max-width: 767px) {
       .pagination a {
+        font-size: 16px;
         padding: 11px 14px 12px 13px; } }
     .pagination a:hover {
       background-color: black;
