@@ -152,6 +152,9 @@ a {
 .mr-16 {
   margin-right: 64px; }
 
+.mt-2 {
+  margin-top: 8px; }
+
 .mb-4 {
   margin-bottom: 16px; }
 
@@ -160,6 +163,9 @@ a {
 
 .mb-12 {
   margin-bottom: 48px; }
+
+.mb-18 {
+  margin-bottom: 72px; }
 
 .mb-20 {
   margin-bottom: 80px; }
@@ -171,18 +177,17 @@ a {
   border-bottom: 1px solid #fff; }
 
 .container {
-  max-width: 1326px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 12px;
   /* 依照設計稿 PC 版：
    * 容器寬度為 1296px，因為有設定為 border-box，所以整體寬度需加上左右 padding
    * 整體 container 寬度為 1296px + 15px*2 = 1320px   
    * （關於 box-sizing 觀念可以再回顧 Day7 每日任務 或是第三週穎老師）*/ }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .container {
-      max-width: 720px;
-      padding: 0 12px; } }
-  @media (max-width: 375px) {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
     .container {
       max-width: 373px; } }
 
@@ -202,7 +207,7 @@ a {
   border-bottom: 5px solid #aa0601; }
 
 header {
-  background-color: #AA0601; }
+  background-color: #aa0601; }
   header h1 a {
     background-image: url("../images/logo-white.png");
     background-size: cover;
@@ -211,12 +216,12 @@ header {
     text-indent: 130%;
     overflow: hidden;
     white-space: nowrap; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       header h1 a {
         width: 80px;
         height: 48px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   header {
     width: 100%;
     position: fixed;
@@ -225,7 +230,7 @@ header {
 .nav :not(:last-child) {
   margin-right: 64px; }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .nav {
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
@@ -240,13 +245,13 @@ header {
 .nav .nav-item {
   font-size: 1.25rem;
   font-weight: normal; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .nav .nav-item {
       padding: 5px 5px; } }
 
 .navBtn {
   display: none; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .navBtn {
       display: block; } }
   .navBtn a .material-symbols-outlined {
@@ -268,13 +273,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .banner {
       background-image: url("../images/home-header-sm.png");
       background-repeat: no-repeat;
       background-position: center;
       height: 787px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .banner {
       height: 396px;
       margin-top: 80px; } }
@@ -286,30 +291,33 @@ header {
     width: 100%; }
     .banner .title span {
       font-size: 2.25rem; }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .banner .title span {
           font-size: 1rem; } }
     .banner .title h2 {
       font-size: 68px;
       font-weight: bold;
       color: #650300; }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .banner .title h2 {
           font-size: 1.5rem; } }
     .banner .title button {
       border-width: 0; }
       .banner .title button a {
-        background-color: #AA0601;
+        background-color: #aa0601;
         color: #fff;
         font-size: 1.25rem;
         padding: 6px 12px; }
+        .banner .title button a:hover {
+          background-color: #e9a6a6;
+          cursor: pointer; }
 
 .do {
   background-color: #fbf2f2; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .do {
       padding-bottom: 44px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .do {
       padding-bottom: 40px; } }
   .do h2 {
@@ -320,7 +328,7 @@ header {
     padding-bottom: 48px;
     font-weight: 700;
     padding-bottom: 32px; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .do h2 {
         font-size: 1.5rem;
         padding-top: 40px; } }
@@ -332,20 +340,21 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .do ul {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
   .do li {
-    width: calc(25% - 24px);
+    width: 25%;
+    padding: 0 12px;
     padding-bottom: 80px; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .do li {
-        width: calc(50% - 24px);
+        width: 50%;
         padding-bottom: 36px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .do li {
-        width: calc(100% - 13px);
+        width: 100%;
         padding-bottom: 32px; } }
     .do li img {
       width: 100px; }
@@ -357,11 +366,11 @@ header {
       font-size: 1rem;
       text-align: left; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .classic {
     margin-bottom: 80px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .classic {
     margin-bottom: 40px; } }
 
@@ -372,7 +381,7 @@ header {
   padding-top: 80px;
   padding-bottom: 48px;
   font-weight: 700; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .classic h2 {
       font-size: 1.5rem;
       padding-top: 40px;
@@ -387,28 +396,28 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .classic ul {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
   .classic ul li {
     width: calc(33.33% - 24px); }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .classic ul li {
         width: 55%; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .classic ul li {
         width: 100%; } }
 
 .classic h3 {
   font-size: 2.5rem;
-  color: #AA0601;
+  color: #aa0601;
   font-weight: 900;
   font-style: italic;
   text-align: center;
   padding-bottom: 80px; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .classic h3 {
       padding-top: 8px;
       padding-bottom: 24px; } }
@@ -416,7 +425,7 @@ header {
 .design {
   background-image: url("../images/index-bg.png");
   padding-bottom: 80px; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .design {
       padding-bottom: 40px; } }
   .design h2 {
@@ -427,7 +436,7 @@ header {
     padding-bottom: 48px;
     font-weight: 700;
     color: #fff; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .design h2 {
         padding-top: 40px;
         padding-bottom: 24px; } }
@@ -439,14 +448,14 @@ header {
         flex-wrap: wrap; }
     .design ul li {
       width: 50%; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .design ul li {
           width: 100%;
           margin-bottom: 24px; } }
 
 .design h3 {
   padding: 8px 0;
-  color: #AA0601;
+  color: #aa0601;
   background-color: #fff;
   font-size: 48px;
   font-weight: 700;
@@ -460,7 +469,7 @@ header {
   padding-top: 80px;
   padding-bottom: 48px;
   font-weight: 700; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .review h2 {
       font-size: 1.5rem;
       padding-top: 40px;
@@ -476,7 +485,7 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .review ul {
       padding-bottom: 40px; } }
   .review ul li {
@@ -484,11 +493,11 @@ header {
     -webkit-box-shadow: 0 2px 6px #00000029;
             box-shadow: 0 2px 6px #00000029;
     border-radius: 4px; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .review ul li {
         width: calc(50% - 24px);
         margin-bottom: 24px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .review ul li {
         width: 100%; } }
 
@@ -497,17 +506,16 @@ header {
   color: black;
   font-weight: 700; }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .review p {
     padding-bottom: 96px; } }
 
 .meg {
-  background-color: #FBF2F2; }
+  background-color: #fbf2f2; }
   .meg .container {
-    max-width: 636px;
     margin: 0 auto;
     padding-bottom: 80px; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .meg .container {
         padding-bottom: 40px; } }
     .meg .container h2 {
@@ -517,18 +525,19 @@ header {
       padding-top: 80px;
       padding-bottom: 48px;
       font-weight: 700; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .meg .container h2 {
           padding-bottom: 24px; } }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .meg .container h2 {
           font-size: 1.5rem;
           padding-top: 40px;
           padding-bottom: 24px; } }
     .meg .container p {
       font-size: 1.25rem;
-      padding-bottom: 24px; }
-      @media (max-width: 768px) {
+      padding-bottom: 24px;
+      width: 50%; }
+      @media (max-width: 992px) {
         .meg .container p {
           font-size: 1rem; } }
   .meg label {
@@ -536,12 +545,15 @@ header {
     width: 100%; }
   .meg input {
     width: 100%;
-    background-color: #FBF2F2;
+    background-color: #fbf2f2;
     padding: 6px 12px; }
+
+form {
+  width: 50%; }
 
 .message {
   padding: 6px 12px;
-  background-color: #FBF2F2;
+  background-color: #fbf2f2;
   height: 136px; }
 
 .checkBoxSet {
@@ -551,7 +563,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .checkBoxSet {
       padding-bottom: 24px; } }
 
@@ -562,20 +574,20 @@ header {
 .btn {
   display: block;
   margin: 0 auto;
-  background-color: #AA0601;
+  background-color: #aa0601;
   width: 70%;
   padding-top: 16px;
   padding-bottom: 16px;
   color: #fff; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .btn {
       width: 60%; } }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .btn {
       width: 100%; } }
   .btn a {
     font-size: 1.5rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .btn a {
         font-size: 1rem; } }
 
@@ -594,14 +606,14 @@ header {
           justify-content: space-evenly;
   margin-top: -22px;
   text-align: center; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .products {
       margin-top: 55px; } }
   .products li {
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .products li {
         padding-top: 10px;
         padding-bottom: 10px; } }
@@ -610,10 +622,10 @@ header {
     .products li a {
       color: black;
       font-size: 32px; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .products li a {
           font-size: 1.5rem; } }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .products li a {
           font-size: 1rem; } }
 
@@ -625,13 +637,13 @@ header {
     background-image: url("../images/product-header-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     height: 296px;
     width: 790px; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .prodBanner .prodBanner-left {
         width: 384px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .prodBanner .prodBanner-left {
         background-image: url("../images/product-header-sm-1.png");
         width: 188px; } }
@@ -642,10 +654,10 @@ header {
     height: 296px;
     width: 790px;
     background-position: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .prodBanner .prodBanner-right {
         width: 384px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .prodBanner .prodBanner-right {
         background-image: url("../images/product-header-sm-2.png");
         width: 188px; } }
@@ -671,7 +683,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 80px; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .optical-cards {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -679,11 +691,11 @@ header {
   .optical-cards .opticalCard {
     width: calc(25% - 24px);
     margin-bottom: 80px; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       .optical-cards .opticalCard {
         width: calc(50% - 24px);
         margin-bottom: 40px; } }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .optical-cards .opticalCard {
         width: calc(100% - 24px);
         margin-bottom: 24px; } }
@@ -691,7 +703,7 @@ header {
   .optical-cards .card-body p {
     font-size: 1.5rem; }
   .optical-cards .card-body p {
-    color: #AA0601;
+    color: #aa0601;
     font-weight: 700; }
   .optical-cards .card-body .brown,
   .optical-cards .card-body .lightB {
@@ -721,7 +733,7 @@ header {
     font-size: 18px;
     padding: 12px 16px;
     border: 1px solid #555555; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .pagination a {
         padding: 11px 14px 12px 13px; } }
     .pagination a:hover {
@@ -733,9 +745,9 @@ header {
   background-color: #f2f2f2; }
 
 footer {
-  background-color: #AA0601;
+  background-color: #aa0601;
   padding-top: 48px; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     footer {
       padding-top: 24px; } }
   footer .navInfoSocial {
@@ -754,7 +766,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .navInfo .contact-nav {
       display: none; } }
   .navInfo .contact-nav li:hover {
@@ -764,7 +776,7 @@ footer {
 .navInfo .contact-info {
   margin-top: 44px;
   margin-bottom: 32px; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .navInfo .contact-info {
       margin: 0 auto 24px; } }
   .navInfo .contact-info li {
@@ -780,27 +792,27 @@ footer {
     .navInfo .contact-info li .material-symbols-outlined {
       padding-right: 22px;
       color: #fff; }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .navInfo .contact-info li .material-symbols-outlined {
           font-size: 18px;
           padding-right: 11px; } }
     .navInfo .contact-info li a {
       font-size: 2.25rem; }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .navInfo .contact-info li a {
           padding: 8px 0;
           font-size: 1rem; } }
 
 .social li:not(:last-child) {
   margin-right: 32px; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .social li:not(:last-child) {
       margin-right: 16px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .social li:not(:last-child) {
       margin-right: 8px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .social li a {
     padding: 8px 0; } }
 
@@ -809,10 +821,10 @@ footer {
   .social .icon:hover {
     -webkit-filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2);
             filter: invert(0.4) sepia(0.7) hue-rotate(226deg) saturate(2); }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .social .icon {
       width: 40px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .social .icon {
       width: 24px;
       height: 24px; } }
@@ -820,7 +832,7 @@ footer {
 .copyRight {
   padding: 32px 12px;
   color: #fff; }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     .copyRight {
       padding: 16px 0 24px 0;
       -webkit-box-orient: vertical;
@@ -831,7 +843,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
       .copyRight .policy {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -840,7 +852,7 @@ footer {
     .copyRight .policy a {
       display: block;
       font-size: 0.875rem; }
-      @media (max-width: 375px) {
+      @media (max-width: 767px) {
         .copyRight .policy a {
           padding-right: 8px; } }
 
