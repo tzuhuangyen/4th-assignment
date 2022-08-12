@@ -166,8 +166,14 @@ a {
 .mb-8 {
   margin-bottom: 33px; }
 
+.mr-4 {
+  margin-right: 16px; }
+
 .mr-8 {
   margin-right: 32px; }
+
+.mb-10 {
+  margin-bottom: 40px; }
 
 .mb-12 {
   margin-bottom: 48px; }
@@ -754,6 +760,52 @@ header {
 .lastPage,
 .nextPage {
   background-color: #f2f2f2; }
+
+h2 {
+  font-size: 3rem; }
+  h2::before {
+    content: "";
+    background-color: #aa0601;
+    width: 3px;
+    height: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px; }
+
+select {
+  width: 304px; }
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .location .card {
+    width: 33.33%; }
+    .location .card .card-header {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 24px;
+      border-bottom: 1px solid #00000020; }
+
+.list-group {
+  margin-top: 16px;
+  padding-left: 24px; }
+  .list-group .list-group-item span {
+    font-size: 18px;
+    margin-right: 11px; }
+  .list-group .button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff; }
 
 footer {
   background-color: #aa0601;

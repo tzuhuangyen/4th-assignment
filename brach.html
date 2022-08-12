@@ -45,17 +45,53 @@
 
     
 <main>
+  <!--  dropdown of location -->
   <section class="container">
-    <h2 class="loaction h2 mt-24 mb-8">門市據點</h2>
-    <select>
-      <option>台北市</option>
-      <option>台中市</option>
-      <option>台南市</option>
-      <option>高雄市</option>
-      <option>屏東市</option>
-      <option>花蓮市</option>
-      <option>台東市</option>
-    </select>
+    <h2 class="mt-24 mb-8">門市據點</h2>
+    <div class="option d-flex mb-10">
+      <lable class="mr-4">選擇地區</lable>
+
+      <select>
+        <option>台北市</option>
+        <option>台中市</option>
+        <option>台南市</option>
+        <option>高雄市</option>
+        <option>屏東市</option>
+        <option>花蓮市</option>
+        <option>台東市</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- cards of location-->
+  <section>
+    <div class="location container">
+      <div class="card">
+        <img
+          src="./assets/images/store-1.png"
+          class="card-img-top"
+          alt="location1"
+        />
+        <div class="card-header">台北中山旗艦店</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex a-items-c">
+            <span class="material-symbols-outlined"> call </span
+            >電話：(02)000-1234
+          </li>
+          <li class="list-group-item d-flex a-items-c">
+            <span class="material-symbols-outlined"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="list-group-item d-flex a-items-c">
+            <span class="material-symbols-outlined"> location_on </span
+            >地址：台北市中山區南京東路25巷2-1號
+          </li>
+        </ul>
+        <button class="button">
+          <a href="#">詳細資訊</a>
+        </button>
+      </div>
+    </div>
   </section>
 </main>
 
