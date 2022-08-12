@@ -269,11 +269,14 @@
     p {
       font-size: $h5-text;
       padding-bottom: 24px;
-      width: 50%;
+
       @include pad {
         font-size: $font-size-base;
       }
     }
+  }
+  .meg-container {
+    width: 50px;
   }
   label {
     margin-bottom: 8px;
@@ -286,9 +289,7 @@
     padding: 6px 12px;
   }
 }
-form {
-  width: 50%;
-}
+
 .message {
   padding: 6px 12px;
   background-color: $lightBg;
