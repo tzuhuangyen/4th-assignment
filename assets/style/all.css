@@ -795,7 +795,7 @@ select {
   .list-group .list-group-item span {
     font-size: 18px;
     margin-right: 11px; }
-  .list-group .button {
+  .list-group button {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
