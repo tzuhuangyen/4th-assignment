@@ -64,7 +64,9 @@ body {
 img {
   vertical-align: middle;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 a {
   display: block;
@@ -155,8 +157,14 @@ a {
 .mt-2 {
   margin-top: 8px; }
 
+.mt-24 {
+  margin-top: 96px; }
+
 .mb-4 {
   margin-bottom: 16px; }
+
+.mb-8 {
+  margin-bottom: 33px; }
 
 .mr-8 {
   margin-right: 32px; }
@@ -535,11 +543,12 @@ header {
           padding-bottom: 24px; } }
     .meg .container p {
       font-size: 1.25rem;
-      padding-bottom: 24px;
-      width: 50%; }
+      padding-bottom: 24px; }
       @media (max-width: 992px) {
         .meg .container p {
           font-size: 1rem; } }
+  .meg .meg-container {
+    width: 50px; }
   .meg label {
     margin-bottom: 8px;
     width: 100%; }
@@ -547,9 +556,6 @@ header {
     width: 100%;
     background-color: #fbf2f2;
     padding: 6px 12px; }
-
-form {
-  width: 50%; }
 
 .message {
   padding: 6px 12px;
