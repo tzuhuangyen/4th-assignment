@@ -1,0 +1,122 @@
+.second-nav {
+  background-color: #650300;
+  color: #ffffff;
+  font-size: 20px;
+  @include phone {
+    display: none;
+  }
+  .container {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  li {
+    margin-right: 48px;
+  }
+}
+
+h2 {
+  font-size: $h2-text;
+  font-weight: 900;
+  margin-top: 96px;
+  margin-bottom: 33px;
+  @include phone {
+    font-size: 24px;
+    margin-top: 120px;
+    margin-bottom: 24px;
+  }
+  &::before {
+    content: "";
+    background-color: $primary;
+    width: 8px;
+    height: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    @include phone {
+      height: 36px;
+    }
+  }
+}
+.blog {
+  ul {
+    margin-bottom: 124px;
+    @include pad {
+      margin-bottom: 80px;
+    }
+
+    li {
+      margin-bottom: 60px;
+      @include pad {
+        margin-bottom: 24px;
+      }
+      @include phone {
+        margin-bottom: 24px;
+        display: block;
+      }
+    }
+  }
+  img {
+    width: 636px;
+    margin-right: 24px;
+    @include pad {
+      width: 336px;
+    }
+    @include phone {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 32px;
+    color: $secondary;
+    @include pad {
+      font-size: 24px;
+    }
+    @include phone {
+      margin-top: 8px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+}
+.card-body {
+  .card-subtitle {
+    margin-bottom: 8px;
+  }
+  date {
+    font-size: 16px;
+  }
+}
+.card-text {
+  font-size: 20px;
+  color: #555555;
+  @include pad {
+    width: 336px;
+    display: -webkit-box; /*值必須為-webkit-box或者-webkit-inline-box*/
+    -webkit-box-orient: vertical; /*值必須為vertical*/
+    -webkit-line-clamp: 6; /*值為數字，表示一共顯示幾行*/
+    overflow: hidden;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.card-link {
+  color: $secondary;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: end;
+  margin-top: 72px;
+  @include pad {
+    color: #555555;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  @include phone {
+    display: none;
+  }
+}

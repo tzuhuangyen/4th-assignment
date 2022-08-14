@@ -276,7 +276,11 @@
     }
   }
   .meg-container {
-    width: 50px;
+    width: 50%;
+    margin: 0 auto;
+    @include pad {
+      width: 100%;
+    }
   }
   label {
     margin-bottom: 8px;
