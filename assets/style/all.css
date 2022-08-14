@@ -554,7 +554,11 @@ header {
         .meg .container p {
           font-size: 1rem; } }
   .meg .meg-container {
-    width: 50px; }
+    width: 50%;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .meg .meg-container {
+        width: 100%; } }
   .meg label {
     margin-bottom: 8px;
     width: 100%; }
@@ -761,19 +765,38 @@ header {
 .nextPage {
   background-color: #f2f2f2; }
 
-h2 {
-  font-size: 3rem; }
-  h2::before {
+.h2 {
+  font-size: 3rem;
+  font-weight: 900; }
+  .h2::before {
     content: "";
     background-color: #aa0601;
-    width: 3px;
+    width: 8px;
     height: 72px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 16px; }
 
+@media (max-width: 767px) {
+  .label {
+    font-size: 16px;
+    margin-right: 8px; } }
+
 select {
   width: 304px; }
+  @media (max-width: 767px) {
+    select {
+      width: 276px;
+      height: 36px; } }
+
+.option {
+  margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .option {
+      margin-bottom: 24px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .location {
   display: -webkit-box;
@@ -781,31 +804,176 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    .location {
+      margin-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .location {
+      margin-bottom: 40px; } }
   .location .card {
-    width: 33.33%; }
+    width: 32%;
+    margin-bottom: 48px;
+    border: 1px solid #00000020; }
+    .location .card:not(:nth-child(3)) {
+      margin-right: 24px; }
+    @media (max-width: 992px) {
+      .location .card {
+        width: calc(50% - 24px);
+        margin-bottom: 24px; }
+        .location .card:not(:nth-child(2)) {
+          margin-right: 24px; } }
+    @media (max-width: 767px) {
+      .location .card {
+        width: 100%; }
+        .location .card:not(:nth-child(0)) {
+          margin-right: 0; } }
     .location .card .card-header {
       padding-top: 8px;
       padding-bottom: 8px;
       padding-left: 24px;
       border-bottom: 1px solid #00000020; }
+      @media (max-width: 767px) {
+        .location .card .card-header {
+          line-height: 36px;
+          font-size: 24px; } }
 
 .list-group {
   margin-top: 16px;
+  margin-bottom: 16px;
   padding-left: 24px; }
+  @media (max-width: 767px) {
+    .list-group .list-group-item {
+      font-size: 20px;
+      padding-right: 24px; } }
   .list-group .list-group-item span {
     font-size: 18px;
     margin-right: 11px; }
-  .list-group button {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-color: black;
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: #fff; }
+
+.detail {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff; }
+
+.second-nav {
+  background-color: #650300;
+  color: #ffffff;
+  font-size: 20px; }
+  @media (max-width: 767px) {
+    .second-nav {
+      display: none; } }
+  .second-nav .container {
+    padding-top: 13px;
+    padding-bottom: 13px; }
+  .second-nav li {
+    margin-right: 48px; }
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 96px;
+  margin-bottom: 33px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+      margin-top: 120px;
+      margin-bottom: 24px; } }
+  h2::before {
+    content: "";
+    background-color: #aa0601;
+    width: 8px;
+    height: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px; }
+    @media (max-width: 767px) {
+      h2::before {
+        height: 36px; } }
+
+.blog ul {
+  margin-bottom: 124px; }
+  @media (max-width: 992px) {
+    .blog ul {
+      margin-bottom: 80px; } }
+  .blog ul li {
+    margin-bottom: 60px; }
+    @media (max-width: 992px) {
+      .blog ul li {
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .blog ul li {
+        margin-bottom: 24px;
+        display: block; } }
+
+.blog img {
+  width: 636px;
+  margin-right: 24px; }
+  @media (max-width: 992px) {
+    .blog img {
+      width: 336px; } }
+  @media (max-width: 767px) {
+    .blog img {
+      width: 100%; } }
+
+.blog h3 {
+  font-size: 32px;
+  color: #650300; }
+  @media (max-width: 992px) {
+    .blog h3 {
+      font-size: 24px; } }
+  @media (max-width: 767px) {
+    .blog h3 {
+      margin-top: 8px; } }
+
+.blog h4 {
+  font-size: 20px;
+  font-weight: 500; }
+  @media (max-width: 992px) {
+    .blog h4 {
+      font-size: 16px; } }
+
+.card-body .card-subtitle {
+  margin-bottom: 8px; }
+
+.card-body date {
+  font-size: 16px; }
+
+.card-text {
+  font-size: 20px;
+  color: #555555; }
+  @media (max-width: 992px) {
+    .card-text {
+      width: 336px;
+      display: -webkit-box;
+      /*值必須為-webkit-box或者-webkit-inline-box*/
+      -webkit-box-orient: vertical;
+      /*值必須為vertical*/
+      -webkit-line-clamp: 6;
+      /*值為數字，表示一共顯示幾行*/
+      overflow: hidden; } }
+  @media (max-width: 767px) {
+    .card-text {
+      display: none; } }
+
+.card-link {
+  color: #650300;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: end;
+  margin-top: 72px; }
+  @media (max-width: 992px) {
+    .card-link {
+      color: #555555;
+      font-size: 16px;
+      margin-top: 0; } }
+  @media (max-width: 767px) {
+    .card-link {
+      display: none; } }
 
 footer {
   background-color: #aa0601;
